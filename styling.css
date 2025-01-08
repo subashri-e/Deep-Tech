@@ -1,0 +1,392 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 260px;
+    height: 40px;
+    margin-left:125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.logo-icon::before {
+    color: white;
+    font-size: 10px;
+    line-height: 1;
+}
+
+.logo-text {
+    color: black;
+    font: size 70px;
+}
+
+.logo-text strong {
+    color: #0047FF;
+    font-size:larger;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon.home::before {
+    content: "🏠"; 
+}
+
+.icon.binoculars::before {
+    content: "🔭";
+}
+
+.icon.tools::before {
+    content: "🛠️";
+}
+
+.icon.bell::before {
+    content: "🔔";
+}
+
+.icon.more::before {
+    content: "⋮";
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.sidebar,.journey-board {
+    margin-top:10px;
+    width: 170px;
+    height: 550px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 12px 12px 0;
+    overflow: hidden;
+}
+
+.top-section {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-icon {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    color:#000;
+}
+ 
+.arrow-icon::before {
+    content: "→";
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.arrow-icon.right {
+    content: "→";
+    transform: rotate(0deg);
+}
+
+.arrow-icon.down {
+    transform: rotate(180deg); 
+}
+
+
+.middle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.jmiddle.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.step-circle {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #0047FF;
+    color: #0047FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bottom-section {
+    height: 20px;
+    background-color: white;
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 12px 12px;
+}
+
+.rsidebar {
+    margin-top:80px;
+    width: 40px;
+    height: 250px;
+    border-radius: 12px 0px 0px 12px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+.rsidebar .rclose-btn {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.text-horizontal {
+    color: white;
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 15px;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.rbuttons {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rbuttons .rbtn {
+    width: 35px;
+    height: 35px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.rbuttons .rbtn svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+
+h1 {
+    color: #0056FF;
+}
+
+
+.intro {
+    background: #e3e3e3;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.title{
+     padding:0px;
+     margin:0px;
+     background: #000;
+     border-radius: 0,0,12px,12px;
+}
+
+.desc{
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.video-section, .thread-section, .structure-section, .method-section {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+iframe {
+    border-radius: 8px;
+}
+
+.thread {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+select, button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.submit-btn:hover {
+    background-color: #0044cc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: #0056FF;
+}
+
+h3 {
+    padding: 5px;
+    text-align:center;
+    color:#f9f7f7;
+    font-weight: lighter;
+    background: #000;
+    
+}
+
+.intro {
+    background: #e3e3e3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.screen {
+    display: flex;
+    height: auto;
+    padding-top: 40px;
+}
+
+.lside {
+    width: 80px;
+    margin-top: 0;
+    padding-top:30px;
+    transition: width 0.3s ease;
+}
+
+.rside {
+    margin-top: 20px; 
+    position: fixed;
+    top: 60px; 
+    bottom: 0;
+    right: 0;
+    width: 250px; 
+    overflow: hidden;     
+}
+
+.mside {
+    flex: 1; 
+    margin: 0 0px 10px 0;
+    padding-top: 0px;
+    overflow: visible; 
+}
+
+.hidden {
+    display: none;
+}
+
+.lside.expanded,.sidebar.expanded {
+    width: 200px;
+}
+
+.lside.expanded .journey-list {
+    display: block;
+}
+
+.lside.expanded .step-circle {
+    display: none;
+}
+
+.journey-title{
+    color:white;
+    padding-right:15px;
+}
